@@ -1,0 +1,10 @@
+.card__top {
+  height: 140px;
+  text-align: center;
+}
+
+.card__top > img {
+  margin-top: 92px;
+  border: 2px solid white;
+  border-radius: 50%;
+}

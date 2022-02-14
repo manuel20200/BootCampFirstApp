@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--darkCyan);
+  background-image: url("./utilities/images/bg-pattern-top.svg"),
+    url("./utilities/images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: -14em -10em, 10em 20em;
+  background-size: contain, contain;
+  background-color: var(--darkCyan);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 400px) {
+  body {
+    background-position: -20em -10em, 25em 20em;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 700px) {
+  body {
+    background-position: 0em -10em, 30em 20em;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-position: 0em -10em, 45em 20em;
   }
 }
